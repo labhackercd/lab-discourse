@@ -3,7 +3,7 @@
 Discourse::Application.config.session_store(
   :cookie_store,
   key: '_forum_session',
-  path: (Rails.application.config.relative_url_root.nil?) ? '/' : Rails.application.config.relative_url_root
+  path: '/'
 )
 
 # Use the database for sessions instead of the cookie-based default,

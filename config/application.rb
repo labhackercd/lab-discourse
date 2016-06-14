@@ -60,6 +60,7 @@ module Discourse
     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
 
     config.assets.paths += %W(#{config.root}/config/locales #{config.root}/public/javascripts)
+    config.assets.prefix = "/discourse-static"
 
     # Allows us to skip minifincation on some files
     config.assets.skip_minification = []

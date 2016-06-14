@@ -139,7 +139,7 @@ class DiscourseStylesheets
   end
 
   def root_path
-    "#{GlobalSetting.relative_url_root}/"
+    "#{GlobalSetting.relative_url_root}/discourse/"
   end
 
   # using uploads cause we already have all the routing in place
