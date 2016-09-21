@@ -225,7 +225,7 @@ SCRIPT
     return "" unless content.present?
 
     hash = Digest::MD5.hexdigest(content)
-    link_css_tag "/site_customizations/#{key}.css?target=#{target}&v=#{hash}"
+    link_css_tag "#{Discourse::Application..config.relative_url_root}/site_customizations/#{key}.css?target=#{target}&v=#{hash}"
   end
 
   def self.link_css_tag(href)
